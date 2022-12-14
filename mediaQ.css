@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    --white: #fff;
+    --matteblack: #28282B;
+    --black: #000;
+    --green: #009B3A;
+    --gold: #ffD700;
+    --black-color: 0, 0 ,0;
+    --formBG: #f2f2f2;
+    --footer: #535353;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*
+
+    Media query for screens smaller than 900px
+
+*/
+
+@media only screen and (max-width: 900px) {
+
+    /* Horizontal line before and after Heading */
+    .flaunt-title::before{
+        display: none;
+    }
+    /* Horizontal line before and after Heading */
+    .flaunt-title::after{
+        display: none;
+    }
+
+    /* 
+
+    Flaunt content Picture and Text 
+
+    */
+    .flaunt-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flaunt-img{
+        max-width: 100%;
+        padding: 10px 30px;
+    }
+
+
+}
+
+/*
+
+    Media query for screens smaller than 700px
+
+*/
+
+@media only screen and (max-width: 700px) {
+
+    .services-seperator{
+        display: flex;
+        flex-direction: column;
+    }
+    /* 
+
+    Schedule Seperator 
+
+    */
+
+    .schedule-seperator span{
+        position: absolute;
+        top: 52%;
+        right: 5%;
+        background-color: var(--gold);
+        padding: 16px 16px;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    /* 
+
+    Flaunt content Picture and Text 
+
+    */
+    .flaunt-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flaunt-content img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Horizontal line before and after Heading */
+    .services-container::before{
+        display: none;
+    }
+    /* Horizontal line before and after Heading */
+    .services-container::after{
+        display: none;
+    }
+
+    .services-columns{
+        display: flex;
+        flex-direction: column;
+     }
+    
+    .columns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-column{
+        width: 100%;
+    }
+
+}
+
+/*
+
+    Media query for screens smaller than 600px
+
+*/
+
+@media only screen and (max-width: 600px) {
+
+    /* 
+
+    Schedule Seperator 
+
+    */
+
+    .schedule-seperator span{
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        background-color: var(--gold);
+        padding: 16px 16px;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    .flaunt-list img{
+        width: 20%;
+    }
+
+    .Slides{
+        width: 325px;
+    }
+    
+    .Slides img{
+        width: 325px;
+    }
+
+}
+
