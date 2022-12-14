@@ -1,6 +1,7 @@
 *{
-    margin: 0;
+    margin: 0 auto !important;
     padding: 0;
+    float: none !important;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -14,6 +15,7 @@
 /* Wrapper */
 .slideshow-wrapper{
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .slideshow-wrapper h1{
@@ -23,12 +25,14 @@
 }
 
 .slideshow-outer-container{
-    max-width: 1200px;
     display: flex;
+    max-width: 1000px;
     flex-wrap: wrap;
-    gap: 30px;
+    row-gap: 30px;
     justify-content: center;
     align-items: center;
+    flex-basis: 50%;
+    padding-bottom: 20px;
 }
 
 .Slides{
