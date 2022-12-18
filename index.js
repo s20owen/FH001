@@ -32,3 +32,13 @@ function showSlides(n, no) {
 function greeting(){
   alert("Welcome " + document.forms["emailform"]["name"].value + "!" + " One of our representatives will contact you.");
 }
+
+function openNav(){
+  const nav = document.getElementById("sideNav");
+  nav.style.width = "65%";
+}
+
+function closeNav(){
+  const nav = document.getElementById("sideNav");
+  nav.style.width = "0";
+}

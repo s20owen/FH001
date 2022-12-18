@@ -33,9 +33,25 @@
                 <a href="index.html"><li>Home</li></a>
                 <a href="index.html#services"><li>Services</li></a>
                 <a href="gallery.html"><li>Gallery</li></a>
-                <li>Contact</li>
+                <a href="#contact"><li>Contact</li></a>
             </ul>
         </div>
+
+         <!-- Side nav for mobile devices -->
+         <span class="mobile-menu" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <div id="sideNav" class="sideNav">
+
+            <span class="close-btn" onclick="closeNav()">&times;</span>
+            <a href="index.html" onclick="closeNav()">Home</a>
+            <a href="index.html#services" onclick="closeNav()">Services</a>
+            <a href="gallery.html" onclick="closeNav()">Gallery</a>
+            <a href="index.html#contact" onclick="closeNav()">Contact</a>
+          
+        </div>
+
     </nav>
 
     <div class="wrapper">
@@ -154,6 +170,16 @@
             // When the user clicks on <span> (x), close the modal
             span.onclick = function() {
                 modal.style.display = "none";
+            }
+
+            function openNav(){
+                const nav = document.getElementById("sideNav");
+                nav.style.width = "65%";
+            }
+
+                function closeNav(){
+                const nav = document.getElementById("sideNav");
+                nav.style.width = "0";
             }
         </script>
 

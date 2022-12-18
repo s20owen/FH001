@@ -58,6 +58,18 @@ nav{
     color: var(--white);
 }
 
+/* 
+mobile side navigation 
+*/
+.sideNav{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
 /* Wrapper */
 .wrapper{
     width: 100%;
