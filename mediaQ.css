@@ -166,3 +166,17 @@
 
 }
 
+@media only screen and (max-width: 400px) {
+    .gall{
+        padding: 10px 10px;
+        max-width: 325px;
+    }
+
+    .modal-content{
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 325px;
+        animation: zoom 0.6s;
+    }
+}

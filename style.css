@@ -17,12 +17,14 @@
 
 body{
    width: 100%;
+   height: 100%;
+   background-color: var(--black);
+   scroll-behavior: smooth;
 }
 
 /* navigation LOGO and Links */
 nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 12px;
     height: 80px;
@@ -36,7 +38,14 @@ nav{
     border-bottom: 2px solid var(--green);
 }
 
+.logo{
+   position: absolute;
+}
+
 .links ul{
+    position: absolute;
+    right: 20px;
+    top: 34%;
     display: flex;
     justify-content: row;
     align-items: center;
@@ -165,7 +174,7 @@ nav{
     width: 160px;
     height: 4px;
     background: var(--white);
-    left: 0;
+    left: -255px;
     top: 50%;
     position: absolute;
 }
@@ -176,7 +185,7 @@ nav{
     width: 160px;
     height: 4px;
     background: var(--white);
-    right: 0;
+    right: -255px;
     top: 50%;
     position: absolute;
 }
@@ -219,14 +228,6 @@ Flaunt content Picture and Text
     color: var(--gold);
 }
 
-.flaunt-list i{
-    display: flex;
-    flex-direction: row;
-    padding: 20px 10px;
-    color: var(--gold);
-    font-size: 2rem;
-}
-
 .flaunt-list p{
     padding: 0px 12px;
     color: var(--white);
@@ -236,8 +237,9 @@ Flaunt content Picture and Text
 .flaunt-list div{
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
 /* 
@@ -268,6 +270,7 @@ Services
 
 .services{
     width: 100%;
+    scroll-margin-top: 4rem;
 }
 
 .services-container{
@@ -370,6 +373,7 @@ Contact Information
 
 */
 .contact-container{
+    scroll-margin-top: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -389,11 +393,12 @@ Contact Information
 .left{
     padding: 30px 20px;
     color: var(--black);
-    line-height: 3rem;
+    line-height: 2.5rem;
     background-color: var(--green);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
+
 }
 
 .left a{
@@ -423,7 +428,8 @@ Contact Information
 /* Add a background color and some padding around the form */
 .container-form {
   background-color: var(--formBG);
-  padding: 20px;
+  padding: 20px 20px;
+  height: auto;
 }
 
 form{
@@ -439,13 +445,13 @@ input[type=text], textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     border-radius: 4px;
-    background-color: #4CAF50;
+    background-color: var(--green);
     color: var(--white);
     padding: 12px 20px;
     border: none;
@@ -522,3 +528,124 @@ footer{
     padding-top: 10px;
 }
 
+/* 
+
+    Gallery
+
+*/
+/* Top content Picture under navigation */
+.gallery-top-content{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.gallery-heading{
+    position: absolute;
+    color: var(--white);
+    top: 50%;
+    left: 0;
+    padding: 0 60px;
+    z-index: 9;
+    line-height: 2rem;
+}
+
+.gallery-heading h1{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+
+.gallery-top-content img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(70%);
+    opacity: 0.3;
+}
+
+/*
+    Gallery Container
+
+*/
+.gallery{
+    margin: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 950px;
+}
+
+.g-column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 50%;
+}
+
+.gall{
+    padding: 10px 10px;
+    max-width: 450px;
+    cursor: pointer;
+}
+
+/* 
+
+    Large Image Modal
+
+*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(--black-color);
+    background-color: rgba(var(--black-color), 0.9);
+}
+
+.modal p{
+    color: var(--green);
+}
+
+.modal-content{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--green);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gallery-contact-container{
+    padding: 10px 0;
+}

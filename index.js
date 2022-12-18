@@ -27,3 +27,8 @@ function showSlides(n, no) {
   // Change image every 4 seconds
   setTimeout(function() { plusSlides(1, no); }, 4000); 
 }
+
+
+function greeting(){
+  alert("Welcome " + document.forms["emailform"]["name"].value + "!" + " One of our representatives will contact you.");
+}
