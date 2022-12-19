@@ -152,6 +152,16 @@
         color: var(--white);
     }
 
+    .flaunt{
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .flaunt-content{
+        width: 100%;
+        padding: 20px 0;
+    }
+
     .flaunt-list img{
         width: 20%;
     }
@@ -223,6 +233,10 @@
         font-size: 36px;
         margin-left: 50px;
         cursor: pointer;
+    }
+
+    .sideNav .close-btn:hover{
+        color: var(--green);
     }
     
 

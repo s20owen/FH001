@@ -35,10 +35,15 @@ function greeting(){
 
 function openNav(){
   const nav = document.getElementById("sideNav");
+  const body = document.getElementById("body");
+  body.style.overflow = "hidden";
   nav.style.width = "65%";
+
 }
 
 function closeNav(){
   const nav = document.getElementById("sideNav");
+  const body = document.getElementById("body");
+  body.style.overflow = "auto";
   nav.style.width = "0";
 }

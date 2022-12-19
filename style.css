@@ -179,37 +179,6 @@ mobile side navigation
     padding-bottom: 20px;
  }
 
-/* Horizontal line before and after Heading */
-.flaunt-title::before{
-    content: "";
-    display: block;
-    width: 160px;
-    height: 4px;
-    background: var(--white);
-    left: -255px;
-    top: 50%;
-    position: absolute;
-}
-/* Horizontal line before and after Heading */
-.flaunt-title::after{
-    content: "";
-    display: block;
-    width: 160px;
-    height: 4px;
-    background: var(--white);
-    right: -255px;
-    top: 50%;
-    position: absolute;
-}
-
-.flaunt-title{
-    display: flex;
-    justify-content: center;
-    padding: 30px 0;
-    color: var(--white);
-    position: relative;
-}
-
 /* 
 
 Flaunt content Picture and Text 
