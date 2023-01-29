@@ -353,6 +353,17 @@ Services
 
 /* 
 
+    Gallery text content
+
+*/
+.gallery-text-content{
+    margin: 0 40px;
+    padding: 10px 30px;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+/* 
+
 Contact Information 
 
 */

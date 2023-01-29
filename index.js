@@ -30,7 +30,7 @@ function showSlides(n, no) {
 
 
 function greeting(){
-  alert("Welcome " + document.forms["emailform"]["name"].value + "!" + " One of our representatives will contact you.");
+  alert("Thank you for contacting us " + document.forms["emailform"]["name"].value + "!" + " One of our representatives will contact you.");
 }
 
 function openNav(){
